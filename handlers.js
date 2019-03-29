@@ -18,7 +18,7 @@ exports.getLatestStats = async (request, response) => {
     logger('info', ['handlers', 'getLatestStats'])
     const db = mongojs(process.env.MONGODB_CONNECTION)
     const stats = db.collection(process.env.MONGODB_COLLECTION)
-    stats.find({ domain: 'webquality', category: { '$in': ['lighthouse', 'observatory'] } }).sort({ date: -1 }).limit(34, (error, documents) => {
+    stats.find({ domain: 'webquality', category: { '$in': ['lighthouse', 'observatory'] } }).sort({ date: -1 }).limit(36, (error, documents) => {
       db.close()
       if (error) {
         logger('error', ['handlers', 'getLatestStats', error])

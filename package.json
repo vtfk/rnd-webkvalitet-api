@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/telemark/micro-logs-main#readme",
   "devDependencies": {
-    "ava": "2.4.0",
+    "ava": "3.13.0",
     "axios": "0.19.0",
     "coveralls": "3.0.9",
     "micro-dev": "3.0.0",
